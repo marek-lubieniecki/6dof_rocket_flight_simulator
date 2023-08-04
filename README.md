@@ -3,6 +3,9 @@
 
 Matlab script to calculate a trajectory of a rocket influenced by a wind. 
 
+main.m - main script to run the simulation
+config - folder containing config.m script with the launchpad, rocket and wind definition
+
 View of the trajectory in Earth centered coordination system:
 ![plot](./readme_pictures/earth_trajectory.PNG)
 
