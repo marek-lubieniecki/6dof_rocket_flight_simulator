@@ -6,8 +6,8 @@ disp("Start initialisation")
 
 addpath("flow"); #load functions calculating flow and atmospheric properties
 addpath("forces"); #load functions calculating forces acting of a rocket
-addpath("odes"); 
-addpath("post_processing"); 
+addpath("odes"); # load odes 
+addpath("post_processing"); #load plotting
 addpath("reference_frames"); #load functions transforming coordinates
 addpath("config"); #load rocket data
 
