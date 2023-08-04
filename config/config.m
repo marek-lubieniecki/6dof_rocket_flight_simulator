@@ -58,10 +58,10 @@ sim.rkt.Iz_empty = 4166963974.90/1e6; #[kg * m2]
 #------------------------------------------------------------------------------
 #AERODYNAMICS
 
-sim.aero.C_a = dlmread('C_a.csv');
-sim.aero.C_n = dlmread('C_n.csv');
-sim.aero.C_s = dlmread('C_s.csv');
-sim.aero.cop = dlmread('Cop.csv');
+sim.aero.C_a = dlmread('c_a.csv');
+sim.aero.C_n = dlmread('c_n.csv');
+sim.aero.C_s = dlmread('c_s.csv');
+sim.aero.cop = dlmread('cop.csv');
 #C_a = coefficient(M_r, alpha, sim.aero.C_a);  # axial force
 #C_n = coefficient(M_r, alpha, sim.aero.C_n);  # normal force
 #C_s = coefficient(M_r, beta,  sim.aero.C_s);  # side force
@@ -102,5 +102,4 @@ sim.par.v0 = 5;
 sim.par.A = sim.par.d^2 * pi/4;
 
 #------------------------------------------------------------------------------
-#sim.fin.Ca =
 sim.fin.Cn =  dlmread('c_n_fins.csv');

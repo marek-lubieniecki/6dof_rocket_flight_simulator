@@ -3,11 +3,15 @@ clear
 clc
 disp("Start initialisation")
 
-run("config.m"); #load defined data
-addpath("reference_frames"); #load functions transforming coordinates
+
 addpath("flow"); #load functions calculating flow and atmospheric properties
 addpath("forces"); #load functions calculating forces acting of a rocket
+addpath("odes"); 
+addpath("post_processing"); 
+addpath("reference_frames"); #load functions transforming coordinates
+addpath("config"); #load rocket data
 
+run("config.m"); #load defined data
 tic #start counting time
 
 #global variables
